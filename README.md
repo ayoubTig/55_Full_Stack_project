@@ -1,8 +1,8 @@
 # Description de projet: #
 
-Ce projet consiste à afficher les scores des joueurs, il a été réalisé pour récupper les données deuips un API et de le traiter puis de les mettre à disposition comme un web service. il compose de deux parties:
--Partie back-end: réalisé avec JAVA et jersy comme des libraires d'implémentation de web service sous Tomcat 9, il sert à récupérer les données de l'URL fournie, et les traiter selon format requis pour les fonctionnalités front-end.
--Partie front-end: composé de HTML, JS et Css pour afficher les données sous format d'Histogarmme sans JS libraire. 
+Ce projet consiste à afficher les scores des joueurs, il a été réalisé pour récupper les données deuips un API et de le traiter puis de les mettre à disposition comme un web service. il compose de deux parties:<br/>
+    1. Partie back-end: réalisé avec JAVA et jersy comme des libraires d'implémentation de web service sous Tomcat 9, il sert à récupérer les données de l'URL fournie, et les traiter selon format requis pour les fonctionnalités front-end.<br/>
+     2. Partie front-end: composé de HTML, JS et Css pour afficher les données sous format d'Histogarmme sans JS libraire. <br/>
 
 ## Déploiemnet:  ##
 
@@ -12,16 +12,7 @@ Pour la partie front vous devez changer la variable URL et de l'adapter à votre
 
 
 
-### Les données brutes: ###
-
-![alt text](https://github.com/ayoubTig/55_Full_Stack_project/blob/master/imgs/databefore.png)
- 
-
-##### Les données après le traitement: #####
-
-![alt text](https://github.com/ayoubTig/55_Full_Stack_project/blob/master/imgs/DataAfter.PNG)
-
-##### Les histogrammes pour la comparaison des résultats :#####
+##### Les histogrammes pour la comparaison des résultats : 
 
 ![alt text](https://github.com/ayoubTig/55_Full_Stack_project/blob/master/imgs/HistogrammeLarry.PNG)
 
