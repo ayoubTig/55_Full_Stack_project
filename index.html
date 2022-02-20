@@ -1,0 +1,120 @@
+<html>
+<head>
+    
+<script type="text/javascript" src="Scrip.js"></script>
+ <style > 
+
+.graph {
+	margin-bottom:1em;
+  font:normal 100%/150% arial;
+}
+
+.graph caption { /*le titre */
+	font:bold 150%/120% arial;
+	padding-bottom:0.33em;
+}
+
+
+
+@supports (display:grid) {
+
+	@media (min-width:66em) {
+
+		.graph {
+			display:block;
+      width:1400px;
+      height:400px;
+		}
+
+		.graph caption {
+			display:block;
+		}
+
+		.graph thead {
+			display:none;
+		}
+
+		.graph tbody { /* la grille */
+			position:relative;
+			display:grid;
+			grid-template-columns:repeat(auto-fit, minmax(1em, 1fr));
+			column-gap:1.5%; /* entre les barrs*/
+			align-items:end;
+			height:100%;
+			margin:3em 0 1em 2.8em;
+			padding:0 1em;
+			border-bottom:2px solid rgba(0,0,0,0.5);
+			background:repeating-linear-gradient(
+				180deg,
+				rgba(170,170,170,0.7) 0,
+				rgba(170,170,170,0.7) 1px,
+				transparent 1px,
+				transparent 20%
+			);
+		}
+
+		.graph tbody:before,
+		.graph tbody:after {
+			position:absolute;
+			left:-3.2em;
+			width:2.8em;
+			text-align:right;
+			font:bold 80%/120% arial;
+		}
+
+		.graph tbody:before {/* La légende de l'axe horizontale la valeur max*/
+			content:"1000 point";
+			top:-0.6em;
+		}
+
+		.graph tbody:after {/* La légende de l'axe horizontale la valeur min*/
+			content:"0";
+			bottom:-0.6em;
+		}
+
+		.graph tr {
+			position:relative;
+			display:block;
+		}
+
+	
+
+		.graph th,
+		.graph td {/* la valeur de la barre (les points)*/
+			display:block;
+			text-align:center;
+		}
+
+		.graph tbody th { /* style de l'axe verticale (les dates)*/
+			position:absolute;
+			bottom:-3em;
+			left:0;
+			width:100%;
+			font-weight:bold;
+			text-align:right;
+     		 white-space:nowrap;
+			text-indent:1;
+			transform:rotate(-30deg);
+		}
+
+		.graph td {/* La barre = td*/
+			width:100%;
+			height:100%;
+			background:#dbad14;/*La coleur de la barre*/
+			transition:background 0.1s;
+		}
+
+	} 
+
+} </style>
+	<title></title>
+</head>
+<body> 
+  
+ 
+<div id="chart"></div>  <!--  cd div qui va comporte le graphe ou le table-->
+
+ 
+	 
+</body>
+</html>
